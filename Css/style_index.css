@@ -1,0 +1,528 @@
+/* NavBarre de là */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.titre{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family: penna;
+    font-size: 42px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+li {
+    float: left;
+    font-family: princ;
+    font-size: 22px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* fonction qui nous permet d'avoir un sembalnt de menu deroulant */
+nav>ul li:hover .deroulant {
+    display: block;
+}
+
+.deroulant {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #333;
+}
+/* NavBarre à là */
+
+body {
+    margin: 0;
+    background-color: rgb(211, 211, 211);
+}
+
+.title {
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+}
+
+/* Réglage de la taille de l'images principale */
+.imageprin img {
+    height: 580px;
+    margin-top: 30px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+}
+
+.imageprin {
+    text-align: center;
+}
+
+.B2, .B3 {
+    display: none;
+    font-family: princ;
+}
+
+/* partie gauche */
+.gauche {
+    background-color: #e9ecef;
+    margin-left: 7%;
+    width: 55%;
+    float: left;
+    border-radius: .3rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.titre2 {
+    font-family: penna;
+    font-size: 42px;
+}
+
+.reste, .reste1, .reste2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: penna;
+    font-size: 32px;
+}
+
+.lead {
+    font-family: princ;
+    font-size: 22px;
+}
+
+.qr {
+    height: 150px;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+/* partie droite */
+.right {
+    background-color: #e9ecef;
+    margin-right: 7%;
+    width: 23.5%;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    border-radius: .3rem;
+}
+
+/* progress bar */
+#file{
+    width: 100%;
+}
+
+h4 {
+    margin-left: 50px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(217, 220, 223, 0.699);
+    text-align: center;
+    font-family: princ;
+    font-size: 18px;
+}
+
+/* Le slider */
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
+
+#nav-droite{
+    right: 20px;
+}
+#nav-gauche{
+    left: 20px;
+}
+
+.elements{
+    display: flex;
+    transition: 1s linear;
+
+}
+
+.element-1{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element-1 > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main {
+    border-radius: 10px;
+    background-color: #e9ecef;
+    margin-top: 1%;
+    margin-right: 9%;
+    margin-left: 9%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* le sous titre */
+.soustitre {
+    font-family: penna;
+    text-align: center;
+    font-size: 52px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* formulaire de contacte */
+.S1 {
+    grid-area: S1;
+}
+
+.S2 {
+    grid-area: S2;
+}
+
+.M1 {
+    grid-area: M1;
+}
+
+.V3 {
+    grid-area: V3;
+}
+
+.EN {
+    grid-area: EN;
+    text-align: center;
+}
+
+/* disign de la grid sur 2 colonnes */
+.form-container {
+    display: grid;
+    grid-template-areas:
+        'S1 S2'
+        'M1 M1'
+        'M1 M1'
+        'V3 EN';
+    grid-gap: 10px;
+    background: #e9ecef;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    border: 1px;
+    border-color: #333;
+    border-style: solid;
+    margin-bottom: 100px;
+}
+
+.form-container>div {
+    background: white;
+    padding: 10px;
+    border: 1px;
+    border-color: #333;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+/* Utilisation du flex dans S1 (pas besoin de changer quoi que se soit le resultat et satisfaisant */
+.S1 {
+    display: flex;
+}
+
+.flex1 {
+    margin-left: 10%;
+}
+
+.flex2 {
+    margin-left: 10%;
+}
+
+.naissance {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Mettre cette box au même format que les autre */
+#sexe {
+    width: 170px;
+}
+
+/* Partie disponible seulement sur mobile */
+.mobile {
+    display: none;
+}
+
+/* Page d'aboutissement du formulaire */
+.all{
+    border-radius: 10px;
+    margin-top: 7%;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Utilisation d'un boutton colorer pour ameliorer l'ergonomie */
+.button1 {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #1c87c9;
+    border: none;
+    display: block;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Partie de l'acceuil */
+.bloc {
+    border-radius: 10px;
+    background-color: #e9ecef;
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 100px;
+    padding: 10px;
+}
+
+.image1 img {
+    height: 230px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+}
+
+.titrecv {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: penna;
+    font-size: 72px;
+}
+
+.bloc1 {
+    display: flex;
+}
+
+.lead1 {
+    margin-top: 2.5%;
+    font-size: 22px;
+    font-family: princ;
+}
+
+.button {
+    border-radius: 5px;
+    margin-left: 80%;
+    font-family: princ;
+    font-size: 22px;
+}
+
+/* Button d"impression */
+.impression {
+    float: right;
+}
+
+.impression .impr {
+    height: 25px;
+}
+
+/* Utilisation d'une police personnaliser */
+@font-face {
+    font-family: penna;
+    src: url("../Font\ style/Penna-vy0L.otf")
+}
+
+@font-face {
+    font-family: princ;
+    src: url("../Font\ style/PRINC___.ttf")
+}
+
+/* Partie sur la page d'impression du cv */
+@media print {
+    .title, .titre2, .right, footer {
+        display: none;
+    }
+
+    body {
+        background-color: none;
+    }
+
+    .B1 {
+        grid-area: B1;
+    }
+    
+    .B2 {
+        grid-area: B2;
+    }
+    
+    .B3 {
+        grid-area: B3;
+    }
+
+    .imageprin {
+        display: grid;
+        grid-template-areas:
+            'B1 B3 B2';
+        grid-gap: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 5px;
+        border: 1px;
+        border-color: #333;
+        border-style: solid;
+    }
+
+    .B2, .B3 {
+        display: block;
+    }
+
+    .p {
+        line-height: 1%;
+    }
+
+    .imageprin img {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        height: 130px;
+        float: left;
+        margin-left: 7%;
+    }
+
+    .gauche {
+        margin-left: 7%;
+        margin-right: 7%;
+        width: 86%;
+    }
+}
+
+/* Format Mobile (inferieure a 750 pixel de large)*/
+@media screen and (max-width : 750px){
+    /* page du CV */
+    .imageprin img {
+        height: 400px;
+    }
+
+    .gauche {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 100px;
+    }
+
+    .impression, .impr {
+        display: none;
+    }
+
+    /* page d'acceuil*/
+    main, .image1, .reste2, .qr {
+        display: none;
+    }
+
+    .button {
+        margin-left: 32%;
+    }
+
+    .titrecv {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .bloc {
+        margin-top: 2%;
+    }
+
+    /* Page contact */
+    .form-container, .contacte {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .lead, .reste1 {
+        text-align: center;
+    }
+}
+
+/*code by :
+           _                
+          | |               
+ ___ _   _| | __ _ _ __ ___ 
+/ __| | | | |/ _` | '__/ _ \
+\__ \ |_| | | (_| | | |  __/
+|___/\__, |_|\__,_|_|  \___|
+      __/ |                 
+     |___/
+*/

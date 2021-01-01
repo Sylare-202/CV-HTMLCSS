@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV by yourname</title>
+        <link rel="stylesheet" href="../Css/style_index.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- partie principale html -->
+    <body style="background-color: rgb(211, 211, 211)">
+        <header class="title">
+            <nav>
+                <ul>
+                    <!-- navbar -->
+                    <h1 class="titre">My CV</h1>
+                    <li>
+                        <a href="../Html/autrerea.html">
+                            <img src="../Images/accueil.png" alt="PPP" style="height: 25px">
+                            Main page
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contacte" href="../Html/contact.html">
+                            <img src="../Images/cv.png" alt="PPP" style="height: 25px">    
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Html/index.html">
+                            <img src="../Images/puzzle.png" alt="PPP" style="height: 25px">
+                            CV
+                        </a>
+                    </li>
+                    <!-- scrolling menu -->
+                    <li style="float:right"><a class="active" href="#Socialmedia">Social media</a>
+                        <ul class="deroulant">
+                            <li><a href="#">Linkedin</a></li> <!-- add your account link in href -->
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- contacte form -->
+        <form name="contactForm" id="contactForm" method="GET" action="../Html/contactend.html">
+            <div class="form-container">
+                <!-- S1 -->
+                <div class="S1">
+                    <!-- div pour faire du flex dans S1-->
+                    <div class='flex1'>
+                        <input type="text" id="nom" name="nom" placeholder="second name"><br>
+                        <input type="text" id="prenom" name="prenom" placeholder="first name"><br>
+                        <select id="sexe" name="sexe">
+                            <option value="homme">condimentum </option>
+                            <option value="femme">iaculis </option>
+                            <option value="autre">Morbi </option>
+                        </select><br>
+                        <input type="email" id="email" name="email" placeholder="Email"><br>
+                        <input type="tel" id="tel" name="tel" placeholder="Phone">
+                    </div>
+                    <div class='flex2'>
+                        <p class="naissance">Birth Day :</p>
+                        <input type="number" name="day" value="1" min="1" max="31">
+                        <input type="number" name="month" value="1" min="1" max="12">
+                        <input type="number" name="year" value="2000" min="0" max="2020"><br>
+                        <p class="naissance">Nationality :</p>
+                        <input type="radio" name="lang" value="FR" checked>FR
+                        <input type="radio" name="lang" value="EN">EN
+                        <input type="radio" name="lang" value="OT">other<br>
+                        <input type="checkbox" name="contact[]" value="CEmail"> Email
+                        <input type="checkbox" name="contact[]" value="CTel"> Phone
+                    </div>
+                </div>
+                <!-- M1 -->
+                <div class="M1">
+                    <textarea cols="10" rows="5" placeholder="Your message"></textarea>
+                </div>
+                <!-- send -->
+                <div class="EN">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </form>
+        <div class="mobile">
+            <div class='all'>
+                <h2>
+                    conubia nostra, per inceptos himenaeos. Integer ut erat
+                </h2>
+                <a href="../Html/autrerea.html" class="button1">
+                    Go back
+                </a>
+            </div>
+        </div>
+    </body>
+    <!-- footer-->
+    <footer>
+        <p></p>
+        <p>Auteur : yourname</p>
+        <p>Contacte : youremail@email.com</p>
+    </footer>
+</html>
+
+<!-- code by :
+           _                
+          | |               
+ ___ _   _| | __ _ _ __ ___ 
+/ __| | | | |/ _` | '__/ _ \
+\__ \ |_| | | (_| | | |  __/
+|___/\__, |_|\__,_|_|  \___|
+      __/ |                 
+     |___/
+-->
