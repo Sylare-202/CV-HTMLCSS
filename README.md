@@ -14,12 +14,4 @@ if you readapt it to your needs and repost it on github
 put me in credit ^^
 
 Tanks for download it if you did ^^
-code by :
-           _                
-          | |               
- ___ _   _| | __ _ _ __ ___ 
-/ __| | | | |/ _` | '__/ _ \
-\__ \ |_| | | (_| | | |  __/
-|___/\__, |_|\__,_|_|  \___|
-      __/ |                 
-     |___/ 
+coded by : Sylare
